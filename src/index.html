@@ -4,6 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <style>
+      /* Define Oxygen font */
+      @font-face {
+        font-family: "Oxygen";
+        src: url("./fonts/Oxygen-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+      }
+      /* Define Oxygen Mono font */
+      @font-face {
+        font-family: "Oxygen mono";
+        src: url("./fonts/OxygenMono-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      /* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+      :root {
+        --black: #171321;
+        --dkblue: #0d314b;
+        --plum: #4b0d49;
+        --hotmag: #ff17e4;
+        --magenta: #e310cb;
+        --aqua: #86fbfb;
+        --white: #f7f8fa;
+        --font-size: 1.3rem;
+        --mono: "Oxygen mono", monospace;
+        --sans: Oxygen, sans-serif;
+      }
+      /* Border box model: https://css-tricks.com/box-sizing/ */
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      /* Beneric styles for the page */
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: var(--sans);
+        background-color: var(--black);
+        color: var(--white);
+        font-size: var(--font-size);
+      }
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+      }
+      a {
+        color: var(--magenta);
+      }
+    </style>
   </head>
   <body>
     <section id="intro">
