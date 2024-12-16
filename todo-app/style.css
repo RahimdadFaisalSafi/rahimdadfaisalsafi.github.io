@@ -1,0 +1,36 @@
+/* style.css */
+
+/* Setzt das box-sizing für alle Elemente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Allgemeines Styling für den Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+
+  /* Zentriert den gesamten Inhalt horizontal und vertikal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container für die gesamte To-Do-App */
+.todo-app {
+  width: 90%;
+  max-width: 900px;
+
+  /* Weitere grundlegende Styles für das Container-Layout */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
